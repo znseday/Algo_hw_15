@@ -1,0 +1,158 @@
+SimpleStringTest:
+10      95      7
+bloom contains Apple and it is correct
+bloom contains Banana and it is correct
+bloom contains Grape and it is correct
+bloom contains Peach and it is correct
+bloom contains Pear and it is correct
+bloom contains Coffee and it is correct
+bloom contains Milk and it is correct
+bloom contains Pizza and it is correct
+bloom contains Chips and it is correct
+bloom contains Tea and it is correct
+bloom doesn't contain Cat and it is correct
+bloom doesn't contain Dog and it is correct
+bloom doesn't contain Snake and it is correct
+bloom doesn't contain Spider and it is correct
+bloom doesn't contain Hen and it is correct
+bloom doesn't contain Horse and it is correct
+bloom doesn't contain Fox and it is correct
+bloom doesn't contain Fish and it is correct
+bloom doesn't contain Crab and it is correct
+bloom doesn't contain Bird and it is correct
+Rate of False Positives = 0 %
+---------------------
+SimpleIntBigTests:
+p(%)    1
+fillRate        1
+N(in_fact)      N(max_for_bloom)        m       k       FP_rate(%)
+100     100     958     7       1.96078
+1000    1000    9585    7       2.24829
+10000   10000   95850   7       3.17583
+100000  100000  958505  7       2.75306
+1000000 1000000 9585058 7       1.93338
+10000000        10000000        95850583        7       1.17351
+---------------------
+SimpleIntBigTests:
+p(%)    2
+fillRate        1
+N(in_fact)      N(max_for_bloom)        m       k       FP_rate(%)
+100     100     814     6       0.990099
+1000    1000    8142    6       2.43902
+10000   10000   81423   6       3.4749
+100000  100000  814236  6       2.43522
+1000000 1000000 8142363 6       3.42624
+10000000        10000000        81423633        6       2.33477
+---------------------
+SimpleIntBigTests:
+p(%)    0.1
+fillRate        1
+N(in_fact)      N(max_for_bloom)        m       k       FP_rate(%)
+100     100     1437    10      0
+1000    1000    14377   10      0.398406
+10000   10000   143775  10      1.49724
+100000  100000  1437758 10      0.496522
+1000000 1000000 14377587        10      1.2412
+10000000        10000000        143775875       10      0.642742
+---------------------
+SimpleIntBigTests:
+p(%)    1
+fillRate        0.75
+N(in_fact)      N(max_for_bloom)        m       k       FP_rate(%)
+100     133     1274    7       0
+1000    1333    12776   7       0.199601
+10000   13333   127797  7       0.734564
+100000  133333  1278004 7       0.627043
+1000000 1333333 12780074        7       0.503651
+10000000        13333333        127800775       7       0.877236
+---------------------
+SimpleIntBigTests:
+p(%)    2
+fillRate        0.75
+N(in_fact)      N(max_for_bloom)        m       k       FP_rate(%)
+100     133     1082    6       0.990099
+1000    1333    10853   6       0.497512
+10000   13333   108562  6       1.62322
+100000  133333  1085645 6       0.78873
+1000000 1333333 10856481        6       0.833593
+10000000        13333333        108564841       6       0.996333
+---------------------
+SimpleIntBigTests:
+p(%)    0.1
+fillRate        0.75
+N(in_fact)      N(max_for_bloom)        m       k       FP_rate(%)
+100     133     1912    10      0.990099
+1000    1333    19165   10      0.0999001
+10000   13333   191696  10      0.119856
+100000  133333  1917006 10      0.621118
+1000000 1333333 19170111        10      0.145189
+10000000        13333333        191701162       10      0.135995
+---------------------
+---------------------
+
+StringTests:
+p(%)    1
+fillRate        1
+N(in_fact)      N(max_for_bloom)        m       k       FP_rate(%)
+100     100     958     7       1.96078
+1000    1000    9585    7       1.18577
+10000   10000   95850   7       1.3028
+100000  100000  958505  7       1.00284
+1000000 1000000 9585058 7       1.10515
+10000000        10000000        95850583        7       1.09791
+---------------------
+StringTests:
+p(%)    2
+fillRate        1
+N(in_fact)      N(max_for_bloom)        m       k       FP_rate(%)
+100     100     814     6       0.990099
+1000    1000    8142    6       2.72374
+10000   10000   81423   6       2.08558
+100000  100000  814236  6       2.11625
+1000000 1000000 8142363 6       2.10254
+10000000        10000000        81423633        6       2.11581
+---------------------
+StringTests:
+p(%)    0.1
+fillRate        1
+N(in_fact)      N(max_for_bloom)        m       k       FP_rate(%)
+100     100     1437    10      1.96078
+1000    1000    14377   10      0
+10000   10000   143775  10      0.139804
+100000  100000  1437758 10      0.128834
+1000000 1000000 14377587        10      0.136314
+10000000        10000000        143775875       10      0.133781
+---------------------
+StringTests:
+p(%)    1
+fillRate        0.75
+N(in_fact)      N(max_for_bloom)        m       k       FP_rate(%)
+100     133     1274    7       0
+1000    1333    12776   7       0.0999001
+10000   13333   127797  7       0.318979
+100000  133333  1278004 7       0.272257
+1000000 1333333 12780074        7       0.3158
+10000000        13333333        127800775       7       0.305285
+---------------------
+StringTests:
+p(%)    2
+fillRate        0.75
+N(in_fact)      N(max_for_bloom)        m       k       FP_rate(%)
+100     133     1082    6       1.96078
+1000    1333    10853   6       1.08803
+10000   13333   108562  6       0.773963
+100000  133333  1085645 6       0.65962
+1000000 1333333 10856481        6       0.691091
+10000000        13333333        108564841       6       0.683003
+---------------------
+StringTests:
+p(%)    0.1
+fillRate        0.75
+N(in_fact)      N(max_for_bloom)        m       k       FP_rate(%)
+100     133     1912    10      0.990099
+1000    1333    19165   10      0
+10000   13333   191696  10      0.029991
+100000  133333  1917006 10      0.0349878
+1000000 1333333 19170111        10      0.0329891
+10000000        13333333        191701162       10      0.0342683
+---------------------
